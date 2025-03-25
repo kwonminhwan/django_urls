@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>{{name}}이 누군가에게 하고싶은말</h1>
+  <form action="{% url "firstapp:catch" %}" method="GET">
+    <div>
+      <label for="name">누구:</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div>
+      <label for="mas">massage:</label>
+      <input type="text" name="massage" id="massage">
+    </div>
+    <input type="submit">
+  </form>
+</body>
+</html>
